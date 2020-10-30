@@ -1,0 +1,10 @@
+.parallax{
+    background-image: url('https://eskipaper.com/images/awesome-paint-wallpaper-1.jpg');
+
+    min-height: 500px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
