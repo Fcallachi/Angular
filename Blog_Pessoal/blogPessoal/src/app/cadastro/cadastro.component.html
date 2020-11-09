@@ -18,18 +18,15 @@
             </div>
             <div class="form-group">
                 <label for="senha">Senha</label>
-                <input type="password" class="form-control" id="senha" placeholder='Digite sua senha' (input)='conferirSenha($event)' value='{{senha}}' name="senha">
+                <input type="password" class="form-control" id="senha" (input)='conferirSenha($event)' value='{{senha}}' name="senha">
             </div>
             <div class="form-group">
                 <label for="exampleInputPassword1">Confirmar Senha</label>
                 <input type="password" class="form-control" id="exampleInputPassword1" [(ngModel)]='user.senha' name='confirmarSenha'>
             </div>
-            <div class="form-group form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1" routerLink='/termo' name='termoUso'>
-                <label class="form-check-label" for="exampleCheck1">Termo de uso</label>
-            </div>
+
             <div class="d-flex justify-content-center">
-                <button type="submit" class="btn btn-primary " (click)='cadastrar()'>Cadastrar</button>
+                <button type="submit" class="btn btn-primary " (click)='cadastrar() '>Cadastrar</button>
             </div>
 
         </form>
