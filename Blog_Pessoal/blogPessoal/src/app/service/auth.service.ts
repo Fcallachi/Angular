@@ -9,32 +9,33 @@ import { UserLogin } from '../model/UserLogin';
 export class AuthService {
 
   constructor(private http: HttpClient) { }
-  logar(userLogin: UserLogin) {
+
+  logar(userLogin: UserLogin){
     return this.http.post('http://localhost:8081/usuario/logar', userLogin)
   }
-  cadastrar(user: User) {
+
+  cadastrar(user: User){
     return this.http.post('http://localhost:8081/usuario/cadastrar', user)
   }
 
-  btnSair() {
+  btnSair(){
     let ok = false
     let token = localStorage.getItem('token')
 
-    if (token != null) {
+    if (token != null){
       ok = true
     }
+
     return ok
   }
-
-  btnLogin() {
+  btnLogin(){
     let ok = false
     let token = localStorage.getItem('token')
 
-    if (token == null) {
+    if (token == null){
       ok = true
     }
+
     return ok
   }
-
 }
-

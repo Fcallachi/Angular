@@ -9,14 +9,14 @@ import { TermoComponent } from './termo/termo.component';
 
 
 const routes: Routes = [
-  {path:'',redirectTo: 'home',pathMatch:'full'},
-  {path: 'home',component: HomeComponent},
-  {path: 'feed',component: FeedComponent},
-  {path: 'login', component: LoginComponent},
-  {path: 'cadastro', component: CadastroComponent},
-  {path: 'termo',component: TermoComponent},
-  {path: 'cadastro-tema',component:PostTemaComponent}
-  
+  { path: '', redirectTo: 'home', pathMatch:'full'},
+  { path: 'home', component: HomeComponent },
+  { path: 'feed', component: FeedComponent },
+  { path: 'login', component: LoginComponent},
+  { path: 'cadastro', component: CadastroComponent},
+  { path: 'cadastro-tema', component: PostTemaComponent},
+  { path: 'termo',component: TermoComponent}
+
 ];
 
 @NgModule({
